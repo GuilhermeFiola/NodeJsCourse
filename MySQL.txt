@@ -1,3 +1,0 @@
-CREATE DATABASE `nodejs_shop`;
-
-CREATE TABLE `nodejs_shop`.`products` ( `id` INT unsigned not null auto_increment, `title` varchar(255) not null, `price` double not null, `description` text not null, `imageUrl` varchar(255) not null, primary key (`id`), unique index `id_uk` (`id` asc) visible);
