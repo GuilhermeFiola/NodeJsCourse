@@ -1,9 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const rootDirectory = require('../util/path');
+const rootDirectory = require("../util/path");
 
-const dataPath = path.join(rootDirectory, 'data', 'cart.json');
+const dataPath = path.join(rootDirectory, "data", "cart.json");
 
 module.exports = class Cart {
     static addProduct(id, productPrice) {
