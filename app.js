@@ -33,7 +33,7 @@ app.use(shopRouter);
 app.use(errorController.get404);
 
 mongoose
-    .connect('')
+    .connect('mongodb+srv:')
     .then(result => {
         User.findOne().then(user => {
             if (!user) {
