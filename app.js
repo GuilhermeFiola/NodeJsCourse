@@ -33,7 +33,9 @@ app.use(shopRouter);
 app.use(errorController.get404);
 
 mongoose
-    .connect('')
+    .connect(
+        'mongodb+srv://Guilherme:zpD5ScxssyCBx56D@nodejscluster-1oaa4.mongodb.net/shop?retryWrites=true'
+    )
     .then(result => {
         User.findOne().then(user => {
             if (!user) {
