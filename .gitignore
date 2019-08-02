@@ -2,3 +2,4 @@ Tarefas/
 node_modules/
 message.txt
 data/*
+private/
